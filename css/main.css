@@ -266,25 +266,20 @@ img {
 
 .benefits .item:not(:last-child) { margin-right: 30px; }
 
-/* For the benefits icons 
-.icon {
-   width: ;
-   height: ;
-   background-image: url("../images/.svg"); 
+.thumb-benefits { 
+   height: 120px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 30px;
+   border-radius: 4px;
 
-   .mail::before {
-   content: 'fsd';
-   display: inline-block;
-   width: 16px;
-   height: 12px;
-   background-color: red;
-   background-image: url("../images/icons.svg#icon-smartphone");
-   background-size: contain;
-   background-repeat: no-repeat;
-   background-position: center;
+   background-color: var(--bcg-team-color); 
 }
-*/ 
 
+.benefits-icons-svg {
+   height: 70px;
+}
 
 .section-title-benefits {
    font-size: 14px;
@@ -347,7 +342,6 @@ img {
 }
 
 /* Ссылки на соц. сети в команде */
-
 .social-icons-footer,
 .social-icons {
    display: inline-flex;
@@ -425,11 +419,33 @@ img {
 * Общие стили для футера (лого, ссылки с адресом и контактами)
 */
 
+.footer-links .container { 
+   padding: 0;
+   margin: 0;
+}
+
 .footer-links { 
-   padding-top: 60px;
-   padding-bottom: 60px;
+   display: flex;
 
    font-family: var(--main-font); 
+}
+
+.address,
+.social-media-footer {
+   width: 270px;
+}
+
+.footer-links .address { 
+   padding-top: 60px;
+   padding-bottom: 60px;
+   padding-left: 15px;
+   margin-right: 30px; 
+}
+
+.footer-links .social-media-footer { 
+   padding-top: 72px;
+   padding-bottom: 100px;
+   padding-right: 15px; 
 }
 
 .full-logo-footer { 
@@ -469,15 +485,8 @@ img {
 }
 
 /* Ссылки на соц. сети в футере */
-
-.social-icons-footer .social-icons-svg { fill: var(--body-hero-color); }
-
-.social-icons-footer .social-icons-link { background-color: var(--bcg-footer-icons); }
-
-/*.social-icons-footer .social-icons-link:nth-child(2) { background-color: var(--accent-color); } */
-
 .section-title-footer {
-   margin-bottom: 10px;
+   margin-bottom: 20px;
 
    font-style: normal;
    font-size: 14px;
@@ -485,6 +494,15 @@ img {
    line-height: 1.17;
    color: var(--body-hero-color);
    text-transform: uppercase;
+}
+
+.social-icons-footer .social-icons-svg { fill: var(--body-hero-color); }
+
+.social-icons-footer .social-icons-link { background-color: var(--bcg-footer-icons); }
+
+.social-icons-link:hover,
+.social-icons-link:focus { 
+   background-color: var(--accent-color); 
 }
 
 /* 
@@ -499,7 +517,7 @@ img {
    text-align: center; 
 }
 
-.filter-item:not(:last-child) {margin-right: 8px; }
+.filter-item:not(:last-child) { margin-right: 8px; }
 
 .portfolio-button {
    display: inline-block;
