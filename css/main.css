@@ -91,6 +91,11 @@ body {
    letter-spacing: .02em;
 }
 
+.full-logo-header { 
+   padding-top: 24px;
+   padding-bottom: 25px;
+}
+
 .logo-accent {
    font-family: var(--logo-font);
    font-size: 26px;
@@ -104,11 +109,6 @@ body {
    font-weight: 700;
    line-height: 1.2;
    color: var(--header-studio-color);
-}
-
-.full-logo-header { 
-   padding-top: 24px;
-   padding-bottom: 25px;
 }
 
 .logo-accent,
@@ -256,10 +256,6 @@ img {
    color: var(--accent-color);
 
    background-color: var(--body-hero-color);
-}
-
-.footer-links {
-   background-color: var(--bcg-footer-color);
 }
 
 /* Преимущества работы со студией*/
@@ -422,9 +418,14 @@ img {
 * Общие стили для футера (лого, ссылки с адресом и контактами)
 */
 
-.footer-links .container { 
+.footer-links {
    padding: 60px 15px;
    margin: 0 auto;
+
+   background-color: var(--bcg-footer-color);
+}
+
+.footer-links .container { 
    width: 1200px;
    display: flex;
    align-items: baseline;
@@ -551,7 +552,7 @@ img {
 }
 
 .flex-element:hover,
-.flex-element-link:focus { 
+.flex-element:focus { 
    box-shadow: var(--project-hover);
 }
 
