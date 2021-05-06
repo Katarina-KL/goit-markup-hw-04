@@ -550,7 +550,7 @@ img {
    margin-right: 30px;
 }
 
-.flex-element-link:hover,
+.flex-element:hover,
 .flex-element-link:focus { 
    box-shadow: var(--project-hover);
 }
